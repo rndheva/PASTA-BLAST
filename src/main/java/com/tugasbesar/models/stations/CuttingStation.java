@@ -7,7 +7,7 @@ import com.tugasbesar.models.enums.IngredientState;
 public class CuttingStation extends Station {
     
     private int cutProgress = 0;
-    private final int sCUT_SPEED = 25; 
+    private final int CUT_SPEED = 25; 
 
     public CuttingStation(int x, int y) {
         super(x, y, "Cutting Station", "C");
