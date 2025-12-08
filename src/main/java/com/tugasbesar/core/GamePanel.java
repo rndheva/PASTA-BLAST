@@ -32,6 +32,7 @@ public class GamePanel extends JPanel implements Runnable {
     // --- ENTITY ---
     public Chef player = new Chef(this, keyH);
 
+
     public GamePanel() {
         this.setPreferredSize(new Dimension(screenWidth, screenHeight));
         this.setBackground(Color.BLACK);

@@ -6,6 +6,7 @@ import java.awt.event.KeyListener;
 public class KeyHandler implements  KeyListener {
 
     public boolean upPressed, downPressed, leftPressed, rightPressed, interactPressed;
+    public boolean dashPressed;
 
     @Override
     public void keyTyped(KeyEvent e) {}
@@ -18,6 +19,9 @@ public class KeyHandler implements  KeyListener {
         if (code == KeyEvent.VK_A) leftPressed = true;
         if (code == KeyEvent.VK_D) rightPressed = true;
         if (code == KeyEvent.VK_SPACE) interactPressed = true;
+
+        // SHIFT (DASH / Lari)
+        if (code == KeyEvent.VK_SHIFT) dashPressed = true;
     }
 
     @Override
@@ -28,5 +32,7 @@ public class KeyHandler implements  KeyListener {
         if (code == KeyEvent.VK_A) leftPressed = false;
         if (code == KeyEvent.VK_D) rightPressed = false;
         if (code == KeyEvent.VK_SPACE) interactPressed = false;
+        if (code == KeyEvent.VK_SHIFT) dashPressed = false; 
+        
     }
 }
